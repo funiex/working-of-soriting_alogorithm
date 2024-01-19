@@ -1,0 +1,79 @@
+.heading:hover{
+        cursor: pointer;
+    }
+    .myanimation{
+        display: inline-block;
+        width:2em;
+        /* transition: 1s ease-in-out; */
+        margin-left: 25px;
+    }
+    @keyframes bar-shorting{
+        from{
+            transform: translateX(0em);
+        }
+        to{
+            transform: translateX(1em); 
+        }
+    }
+    .myanimation1{
+        display: inline-block;
+        height: 30px;
+        width: 7%;
+        border-radius: 10px;
+        background-color: rgb(219, 227, 231);
+        animation: bar-shorting 1s ease-in-out 0.5s infinite alternate;
+    }
+    .myanimation2{
+        display: inline-block;
+        height: 15px;
+        width: 7%;
+        border-radius: 10px;
+        background-color: rgb(219, 227, 231)
+        
+        /* background-color: darkgoldenrod */
+    }
+    .myanimation3{
+        display: inline-block;
+        height: 25px;
+        width: 7%;
+        border-radius: 10px;
+        background-color: rgb(219, 227, 231);
+    }
+    /* transition for sorting bars in heading ends here*/
+    
+    .mybdy{
+        background-image: url("https://wallpapers.com/images/high/abstract-3160-x-2140-background-n63qia69vj767s2m.webp")
+    }
+    .mybtn{
+        margin:2px;
+        transition: 1s ease-in-out;
+    }   
+    .mybtn:hover{
+        transform:scale(1.2);
+    }
+    .heading{
+        margin-left: 15px;
+        font-family: 'Praise', cursive;
+        color: #fff;
+        margin-right: 50px;
+
+        /* font-size: 250%; */
+        display: inline-block;
+    }
+    .bars{
+        margin: 5% auto;
+        padding: auto 10px;
+        width:95%;
+    }
+    
+    .speed-size{
+        margin:4px 10%;
+         color: #fff;
+    }
+    .speed{
+        display: inline-block;
+    }
+    .size{
+        display: inline-block;
+    }
+    /* #b3edeee0 */

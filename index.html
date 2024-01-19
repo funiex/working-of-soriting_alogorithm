@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm</title>
+    <link rel="stylesheet" href="sorting.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="mybdy">
+    <!-- Heading content -->
+    <div class="heading-container">
+        <h1 class="heading">Sorting visualizer</h1>
+            <div class="myanimation">
+                <div class="myanimation1"></div>
+                <div class="myanimation2"></div>
+                <div class="myanimation3"></div>
+            </div>
+        </h1>
+    </div>
+
+
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-light " ">
+        <div class=" container-fluid">
+        <button class="mybtn btn btn-success" id="newArray"> New Array </button>
+        <!-- <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+        <div class="speed-size">
+            <div class="size">
+                <h5  >Size</h5>
+                <input type="range" id="arr_sz" min=1 max=100 step=1 value=100>
+            </div>
+            <div class="speed">
+                <h5>Speed</h5>
+                <input type="range" id="arr_speed" min=1 max=1000 step=1 value=950>
+            </div>
+
+        </div>
+        <!-- to remove hamburger commment below line -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <button class="mybtn btn btn-success " id="BubbleSort">Bubble Sort</button>
+            <button class="mybtn btn btn-success" id="SelectionSort">Selection Sort</button>
+            <button class="mybtn btn btn-success" id="InsertionSort">Insertion Sort</button>
+            <button class="mybtn btn btn-success" id="QuickSort">Quick Sort</button>
+            <button class="mybtn btn btn-success" id="MergeSort">Merge Sort</button>
+
+        </div>
+        </div>
+        <!-- </div> -->
+    </nav>
+    <div class="bars" id="sorting-container">
+    </div>
+
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
+    <script src="insertion.js"></script>
+    <script src="quicksort.js"></script>
+    <script src="merge.js"></script>
+</body>
+
+</html>
